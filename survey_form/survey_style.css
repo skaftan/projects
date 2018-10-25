@@ -1,10 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Krub');
 html,body{
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Krub', sans-serif;
   text-align:center;
   min-width:260px;
-  background-color:#ffc89b;
+  background-color:#FFE9D7;
 }
 #survey_form{
+  max-width: 900px;
   margin:auto;
   background-color:#ffffff;
+}
+label{
+  text-align: right;
+}
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #6E0D25;
+  border-radius: 2px;
+}
+#submit_button{
+  height:35px;
+  width: 95px;
+  background-color: #6E0D25;
+  color: white;
+  border-radius: 5px;
+  border: 0px solid #DCAB6B;
+}
+::-webkit-input-placeholder {
+   text-align: center;
 }

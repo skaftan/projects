@@ -8,19 +8,64 @@
   <body>
     <h3>Survey form</h3>
     <form id="survey_form" class="" action="index.html" method="post">
-      <p>hello</p>
-      <input type="text">Name</input>
-      <input type="text">Email</input>
-      <input type="text">Age</input>
 
-      <select name="ocupation">  
-        <option>Student</option>
-        <option>Full time job</option>
-        <option>Full time learner</option>
-        <option>Other</option>
-      </select>
+      <div class="">
+        <p>Let us know how we can improve company_name</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="name"></input>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="email"></input>
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="age"></input>
+      </div>
 
+      <div class="">
+        <select class="dropdown" name="ocupation">
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>Other</option>
+        </select>
+      </div>
 
+      <div class="">
+        <p>How likely is that you would recommend company_name to a friend?</p>
+        <input type="radio" name="" value="">Likely</input>
+        <input type="radio" name="" value="">Maybe</input>
+        <input type="radio" name="" value="">Not sure</input>
+      </div>
+
+      <div class="">
+        <p>What do you like the most about company_name</p>
+        <select class="dropdown" name="preferences">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Other</option>
+        </select>
+
+      </div>
+
+      <div class="">
+        <p>Things to improve</p>
+        <input type="checkbox" name="" value="">Option 1</input>
+        <input type="checkbox" name="" value="">Option 2</input>
+        <input type="checkbox" name="" value="">Option 3</input>
+        <input type="checkbox" name="" value="">Option 4</input>
+        <input type="checkbox" name="" value="">Option 5</input>
+        <input type="checkbox" name="" value="">Option 6</input>
+        <input type="checkbox" name="" value="">Option 7</input>
+        <input type="checkbox" name="" value="">Option 8</input>
+        <input type="checkbox" name="" value="">Option 9</input>
+        <input type="checkbox" name="" value="">Option 10</input>
+      </div>
+
+      <div class="">
+        <p>Any comments ?</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+      </div>
+
+      <input id="submit_button" type="submit" value="Submit">
     </form>
 
   </body>
