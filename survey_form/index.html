@@ -6,67 +6,100 @@
     <link rel="stylesheet" href="survey_style.css">
   </head>
   <body>
-    <h3>Survey form</h3>
-    <form id="survey_form" class="" action="index.html" method="post">
 
-      <div class="">
-        <p>Let us know how we can improve company_name</p>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="name"></input>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="email"></input>
-        <label for="age">Age</label>
-        <input type="text" id="age" placeholder="age"></input>
+    <div class="survey_form">
+      <h3>Survey form</h3>
+      <form id="survey_form" class="" action="index.html" method="post">
+      <div class="row">
+        <div class="labels">
+          <label for="name">Name</label>
+        </div>
+        <div class="rightColumn">
+          <input type="text" id="name" placeholder="name"></input>
+        </div>
       </div>
-
-      <div class="">
-        <select class="dropdown" name="ocupation">
-          <option>Student</option>
-          <option>Full time job</option>
-          <option>Full time learner</option>
-          <option>Other</option>
-        </select>
+      <div class="row">
+        <div class="labels">
+          <label for="email">Email</label>
+        </div>
+        <div class="rightColumn">
+          <input type="text" id="email" name="email" placeholder="email"></input>
+        </div>
       </div>
-
-      <div class="">
-        <p>How likely is that you would recommend company_name to a friend?</p>
-        <input type="radio" name="" value="">Likely</input>
-        <input type="radio" name="" value="">Maybe</input>
-        <input type="radio" name="" value="">Not sure</input>
+      <div class="row">
+        <div class="labels">
+          <label for="age">Age</label>
+        </div>
+        <div class="rightColumn">
+          <input type="text" id="age" placeholder="age"></input>
+        </div>
       </div>
-
-      <div class="">
-        <p>What do you like the most about company_name</p>
-        <select class="dropdown" name="preferences">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Other</option>
-        </select>
-
+      <div class="row">
+        <div class="labels">
+          <label for="ocupation">Which option best describes your current role?</label>
+        </div>
+        <div class="rightColumn">
+          <select class="dropdown" id="ocupation" name="ocupation">
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Other</option>
+          </select>
+        </div>
       </div>
-
-      <div class="">
-        <p>Things to improve</p>
-        <input type="checkbox" name="" value="">Option 1</input>
-        <input type="checkbox" name="" value="">Option 2</input>
-        <input type="checkbox" name="" value="">Option 3</input>
-        <input type="checkbox" name="" value="">Option 4</input>
-        <input type="checkbox" name="" value="">Option 5</input>
-        <input type="checkbox" name="" value="">Option 6</input>
-        <input type="checkbox" name="" value="">Option 7</input>
-        <input type="checkbox" name="" value="">Option 8</input>
-        <input type="checkbox" name="" value="">Option 9</input>
-        <input type="checkbox" name="" value="">Option 10</input>
+      <div class="row">
+        <div class="labels">
+          <label for="recommend">How likely is that you would recommend company_name to a friend?</label>
+        </div>
+        <div class="rightColumn">
+          <input type="radio" name="recommend" id="recommend" value="">Likely</input>
+          <input type="radio" name="recommend" id="recommend" value="">Maybe</input>
+          <input type="radio" name="recommend" id="recommend" value="">Not sure</input>
+        </div>
       </div>
-
-      <div class="">
-        <p>Any comments ?</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
+      <div class="row">
+        <div class="labels">
+          <label for="preferences">What do you like the most about company_name</label>
+        </div>
+        <div class="rightColumn">
+          <select class="dropdown" name="preferences">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Other</option>
+          </select>
+        </div>
       </div>
-
-      <input id="submit_button" type="submit" value="Submit">
-    </form>
+      <div class="row">
+        <div class="labels">
+          <label for="">Things to improve</label>
+        </div>
+        <div class="rightColumn">
+          <input type="checkbox" name="improve" value="">Option 1</input>
+          <input type="checkbox" name="improve" value="">Option 2</input>
+          <input type="checkbox" name="improve" value="">Option 3</input>
+          <input type="checkbox" name="improve" value="">Option 4</input>
+          <input type="checkbox" name="improve" value="">Option 5</input>
+          <input type="checkbox" name="improve" value="">Option 6</input>
+          <input type="checkbox" name="improve" value="">Option 7</input>
+          <input type="checkbox" name="improve" value="">Option 8</input>
+          <input type="checkbox" name="improve" value="">Option 9</input>
+          <input type="checkbox" name="improve" value="">Option 10</input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="comments">Any comments ?</label>
+        </div>
+        <div class="rightColumn">
+          <textarea name="name" rows="4" cols="40"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <button type="button" class="sub_button" name="button">Submit</button>
+      </div>
+      </form>
+    </div>
 
   </body>
 </html>
