@@ -1,0 +1,10 @@
+html,body{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-align:center;
+  min-width:260px;
+  background-color:#ffc89b;
+}
+#survey_form{
+  margin:auto;
+  background-color:#ffffff;
+}
