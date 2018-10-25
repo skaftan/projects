@@ -12,33 +12,38 @@ html,body{
 #title{
   background:;
 }
-#intro{
-  padding-top: -10px;
-  padding-bottom: 10px;
-}
 #img-div{
+  margin-top: 20px;
   background: white;
 }
 #image{
   max-width: 100%;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
 #img-caption{
   background:;
+  padding-bottom:50px;
+
 }
 #tribute-info{
   margin-top: 50px;
   justify-content: center;
 }
+blockquote{
+  margin-top: 50px;
+  font-style: italic;
+}
 
-.container{
-  display: grid;
-  align-items: center;
-  justify-content: center;
+#footer{
+  font-weight: bolder;
+  margin-top: 60px;
 }
 ul{
   text-align: left;
-  width: 500px;
+  max-width: 700px;
   margin:0 auto;
 }
 li{
