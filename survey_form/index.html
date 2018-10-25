@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="survey_style.css">
   </head>
   <body>
+    <h3>Survey form</h3>
+<div class="outside_box">
 
     <div class="survey_form">
-      <h3>Survey form</h3>
       <form id="survey_form" class="" action="index.html" method="post">
+
       <div class="row">
         <div class="labels">
           <label for="name">Name</label>
@@ -18,6 +20,7 @@
           <input type="text" id="name" placeholder="name"></input>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="email">Email</label>
@@ -26,6 +29,7 @@
           <input type="text" id="email" name="email" placeholder="email"></input>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="age">Age</label>
@@ -34,6 +38,7 @@
           <input type="text" id="age" placeholder="age"></input>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="ocupation">Which option best describes your current role?</label>
@@ -47,16 +52,18 @@
           </select>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="recommend">How likely is that you would recommend company_name to a friend?</label>
         </div>
         <div class="rightColumn">
-          <input type="radio" name="recommend" id="recommend" value="">Likely</input>
-          <input type="radio" name="recommend" id="recommend" value="">Maybe</input>
-          <input type="radio" name="recommend" id="recommend" value="">Not sure</input>
+          <li class="radio"><input class="" type="radio" class="userRatings" name="recommend" id="recommend" value=""><label>Likely</label></input></li>
+          <li class="radio"><input class="" type="radio" class="userRatings" name="recommend" id="recommend" value="">Maybe</input></li>
+          <li class="radio"><input class="" type="radio" class="userRatings" name="recommend" id="recommend" value="">Not sure</input></li>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="preferences">What do you like the most about company_name</label>
@@ -70,36 +77,39 @@
           </select>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="">Things to improve</label>
         </div>
         <div class="rightColumn">
-          <input type="checkbox" name="improve" value="">Option 1</input>
-          <input type="checkbox" name="improve" value="">Option 2</input>
-          <input type="checkbox" name="improve" value="">Option 3</input>
-          <input type="checkbox" name="improve" value="">Option 4</input>
-          <input type="checkbox" name="improve" value="">Option 5</input>
-          <input type="checkbox" name="improve" value="">Option 6</input>
-          <input type="checkbox" name="improve" value="">Option 7</input>
-          <input type="checkbox" name="improve" value="">Option 8</input>
-          <input type="checkbox" name="improve" value="">Option 9</input>
-          <input type="checkbox" name="improve" value="">Option 10</input>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 1</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 2</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 3</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 4</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 5</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 6</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 7</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 8</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 9</input></li>
+          <li class="checkbox"><input type="checkbox" class="" name="improve" value="">Option 10</input></li>
         </div>
       </div>
+
       <div class="row">
         <div class="labels">
           <label for="comments">Any comments ?</label>
         </div>
         <div class="rightColumn">
-          <textarea name="name" rows="4" cols="40"></textarea>
+          <textarea class="input-field" placeholder="Enter your comment here..." name="name" rows="6" cols="60"></textarea>
         </div>
       </div>
+
       <div class="row">
         <button type="button" class="sub_button" name="button">Submit</button>
       </div>
       </form>
     </div>
-
+</div>
   </body>
 </html>

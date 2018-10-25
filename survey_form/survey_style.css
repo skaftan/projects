@@ -9,19 +9,31 @@ html,body{
   background: white;
   display:grid;
   grid-template-columns: 70%;
-  border: 1px black solid;
   justify-content:space-around;
   grid-template-rows: auto;
+  border-radius: 10px;
+  border: 1px white solid;
 }
 .labels{
   display:inline-block;
-
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
 }
 .rightColumn{
   display:inline-block;
+  text-align: left;
+  width: 48%;
+  padding: 5px;
+  vertical-align: middle;
 }
 div{
-  border:1px black solid;
+  border:0px black solid;
+  padding: 5px;
+}
+.radio, .checkbox{
+  display:block;
 }
 .dropdown {
   height: 35px;
@@ -40,6 +52,43 @@ div{
   border-radius: 5px;
   border: 0px solid #DCAB6B;
 }
-.row{
+.outside_box{
+  padding:20px 200px 20px 200px;
+  border-radius: 10px;
+  border: 0px #6E0D25 solid;
+  display: flex;
   justify-content: center;
+}
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
 }
