@@ -57,3 +57,36 @@ button:hover {
   background-color: lightgreen;
   transition: background-color 1s;
 }
+/* how it works */
+#how-it-works{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* features */
+.container{
+
+}
+.grid{
+  display:flex;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+#features{
+  padding: 20px;
+}
